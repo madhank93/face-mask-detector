@@ -1,5 +1,6 @@
 import './face_detection_camera.dart';
 import './face_detection_image.dart';
+import './face_detection_firebase_ml_kit.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -14,27 +15,38 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             RaisedButton(
-                child: Text('Detect face mask from the Image'),
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => FaceDetectionFromImage(),
-                    ),
-                  );
-                }),
+              child: Text('Detect face mask from the Image'),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => FaceDetectionFromImage(),
+                  ),
+                );
+              },
+            ),
             RaisedButton(
-                child: Text('Detect face mask from Live Camera'),
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => FaceDetectionFromLiveCamera(),
-                    ),
-                  );
-                }),
+              child: Text('Detect face mask using Firebase ML kit'),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => FaceDetectionUsingFireBaseMLkit(),
+                  ),
+                );
+              },
+            ),
+            RaisedButton(
+              child: Text('Detect face mask from Live Camera'),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => FaceDetectionFromLiveCamera(),
+                  ),
+                );
+              },
+            ),
           ],
         ),
       ),
     );
   }
 }
-
