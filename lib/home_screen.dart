@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Smile To Face App'),
+        title: Text('Face Mask Detector'),
       ),
       body: Center(
         child: Column(
@@ -20,16 +20,6 @@ class HomeScreen extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => FaceDetectionFromImage(),
-                  ),
-                );
-              },
-            ),
-            RaisedButton(
-              child: Text('Detect face mask using Firebase ML kit'),
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => FaceDetectionUsingFireBaseMLkit(),
                   ),
                 );
               },

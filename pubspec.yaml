@@ -25,6 +25,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   image_picker: any
   camera: any
+  tflite: ^1.0.5
+  firebase_ml_vision: any
 
 dev_dependencies:
   flutter_test:
@@ -43,8 +45,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
+  assets:
+   - assets/ml_trained_model/model_unquant.tflite
+   - assets/ml_trained_model/labels.txt
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
