@@ -116,7 +116,6 @@ class _FaceDetectionFromImageState extends State<FaceDetectionFromImage> {
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 20.0,
-                            background: Paint()..color = Colors.white,
                           ),
                         )
                       : Container()
