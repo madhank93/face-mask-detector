@@ -26,7 +26,6 @@ dependencies:
   image_picker: any
   camera: any
   tflite: ^1.0.5
-  firebase_ml_vision: any
 
 dev_dependencies:
   flutter_test:
